@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="41*"/>
+            <ColumnDefinition Width="759*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Button_ReadSearial" Content="Read" Grid.Column="1" HorizontalAlignment="Left" Margin="315,35,0,0" VerticalAlignment="Top" Click="Button_ReadSearial_Click"/>
+        <ComboBox x:Name="ComboBox_Ports" Grid.Column="1" HorizontalAlignment="Left" Margin="175,34,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="Label_PickPort" Content="Select COM Port:" Grid.Column="1" HorizontalAlignment="Left" Margin="71,32,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="TextBlock_ReadSerial" Grid.Column="1" HorizontalAlignment="Left" Margin="175,107,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="202" Width="328"/>
     </Grid>
 </Window>
